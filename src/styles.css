@@ -1,0 +1,108 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.phone-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  font-family: sans-serif;
+}
+
+.phone {
+  display: flex;
+  border: 1px solid #ccc;
+  align-items: center;
+  height: 40px;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.phone > input {
+  font-size: 16pt;
+  height: 100%;
+  border: none;
+  flex: 1;
+  width: 100%;
+  outline: none;
+}
+
+.phone > img {
+  height: 35px;
+}
+
+.phone > p {
+  font-size: 16pt;
+  margin-left: 8px;
+  color: black;
+}
+
+.phone > #main-flag {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.options-dropdown {
+  background-color: white;
+  position: absolute;
+  width: 80%;
+  height: 200px;
+  overflow-y: scroll;
+  margin-top: 60px;
+  z-index: 1;
+  box-shadow: 0px 0px 16px 3px rgba(199, 199, 199, 1);
+  -webkit-box-shadow: 0px 0px 16px 3px rgba(199, 199, 199, 1);
+  -moz-box-shadow: 0px 0px 16px 3px rgba(199, 199, 199, 1);
+  border-radius: 4px;
+}
+
+.options-dropdown > input {
+  padding: 4px;
+  border: none;
+  outline: none;
+  height: 20px;
+  font-size: 16px;
+}
+
+.options-dropdown > hr {
+  margin-left: 4px;
+  margin-right: 4px;
+  border-top: 0.5px #ccc;
+}
+
+.options-dropdown > p {
+  margin-left: 8px;
+  color: #ccc;
+}
+.item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #dcdcdc;
+}
+
+.item > img {
+  margin-left: 8px;
+}
+
+.item > p {
+  margin-left: 8px;
+}
+
+.item > #item-flag {
+  font-size: 32px;
+}
